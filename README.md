@@ -10,12 +10,18 @@ Since the programme is written in rust, it's necessary to set up the rust toolch
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 
+To create the histogram plot for the numbers it's necesarry to set up `conda` and install the `matplotlib` library.
+
 ## Programme execution
 
 To build the programme without running it use:
 
 `cargo build`
 
-To execute the programme une:
+To execute the programme use:
 
 `cargo run`
+
+To run the python programme use:
+
+`python src/hist.py`

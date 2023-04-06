@@ -17,9 +17,6 @@ def main():
 
     ax.bar(ticks_labels, y)
 
-    # print(ticks)
-    # print(ticks_labels)
-
     ax.set_xticks(ticks)
     ax.set_xticklabels(ticks_labels)
 
