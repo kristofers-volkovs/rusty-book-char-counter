@@ -9,7 +9,7 @@ def main():
     data = json.load(f)
     f.close()
 
-    fig, ax = plt.subplots(figsize =(10, 7))
+    _fig, ax = plt.subplots(figsize =(10, 7))
 
     ticks = [i for i in range(len(data.keys()))]
     ticks_labels = list(data.keys())

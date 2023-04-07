@@ -15,7 +15,9 @@ async fn main() {
         .fold(
             || HashMap::new(),
             |mut counts, c| {
-                *counts.entry(c).or_insert(0) += 1;
+                for c_low in c.to_lowercase() {
+                    *counts.entry(c_low).or_insert(0) += 1;
+                }
                 counts
             },
         )
